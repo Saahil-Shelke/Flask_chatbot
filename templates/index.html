@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Layout</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container" id="main-container">
+        <div class="chat-history">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="templates/wotr-logo.png" alt="WOTR Logo">
+                </div>
+            </div>
+            <div class="history-section">
+                <div class="inner-history-section">
+                    <h4>Last 7 days</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Adipisicing elit. Minima vero dignissimos</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="inner-history-section">
+                    <h4>Last Month</h4>
+                    <p>Perspiciatis inventore fugiat ut corrupti</p>
+                    <p>cupiditate quis odit, praesentium?</p>
+                    <p>Maxime nemo accusamus quam earum temporibus aut</p>
+                    <p>officia cumque at, sunt amet aliquam</p>
+                </div>
+                <div class="inner-history-section">
+                    <h4>June</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Maxime nemo accusamus quam earum temporibus aut</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-area">
+            <div class="top-bar">
+                <h1>GPT in FarmPrecise</h1>
+                <div class="profile-dropdown">
+                    <button id="profile-button" class="profile-button">W</button>
+                    <div id="dropdown-menu" class="dropdown-menu">
+                        <button onclick="selectLanguage()">Language Selection</button>
+                        <button onclick="logOut()">Log Out</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-output" id="chatOutput">
+                <!-- Chat messages will be appended here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type something..." />
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Language Selection Popup -->
+    <div id="language-popup" class="language-popup">
+        <div class="popup-content">
+            <h3>Select Language</h3>
+            <button class="lang-button" data-language="en">English</button>
+            <button class="lang-button" data-language="hi">Hindi</button>
+            <button class="lang-button" data-language="mr">Marathi</button>
+            <p id="language-message" class="language-message"></p> <!-- Message Display -->
+            <button id="close-popup-button" class="close-button">Close</button>
+        </div>
+    </div>
+    
+
+    <script src="static/script.js"></script>
+</body>
+</html>
